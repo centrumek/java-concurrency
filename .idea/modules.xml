@@ -2,9 +2,8 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaConcurrency.main.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaConcurrency.main.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/JavaConcurrency.test.iml" filepath="$PROJECT_DIR$/.idea/modules/JavaConcurrency.test.iml" />
       <module fileurl="file://$PROJECT_DIR$/java-concurrency-k.iml" filepath="$PROJECT_DIR$/java-concurrency-k.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/java-concurrency.main.iml" filepath="$PROJECT_DIR$/.idea/modules/java-concurrency.main.iml" />
     </modules>
   </component>
 </project>

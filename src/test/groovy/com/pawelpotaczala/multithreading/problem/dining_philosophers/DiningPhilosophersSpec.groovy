@@ -30,11 +30,11 @@ class DiningPhilosophersSpec extends Specification {
 
   def "Should pass dining philosophers fair access to forks"() {
     given:
-      def size = 7
+      def size = 200
       def result = false
 
     when:
-      for(int i = 0; i < 2000; i++) {
+      for(int i = 0; i < 20; i++) {
         def executor = buildExecutor(size)
         def philosophers = buildPhilosophers(size, ReentrantLockFork.class)
         philosophers.forEach(executor::submit)
