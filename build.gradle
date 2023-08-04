@@ -1,0 +1,38 @@
+plugins {
+    id 'java'
+    id 'groovy'
+    id 'com.adarshr.test-logger' version '3.2.0'
+}
+
+group 'com.pawelpotaczala'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compileOnly 'org.projectlombok:lombok:1.18.28'
+    annotationProcessor 'org.projectlombok:lombok:1.18.28'
+    implementation 'ch.qos.logback:logback-core:1.4.8'
+    implementation 'ch.qos.logback:logback-classic:1.4.8'
+    implementation 'org.slf4j:slf4j-api:2.0.7'
+    testImplementation 'org.apache.groovy:groovy-all:4.0.13'
+    testImplementation 'org.spockframework:spock-core:2.4-M1-groovy-4.0'
+}
+
+test {
+    useJUnitPlatform()
+}
+
+testlogger {
+    theme 'standard'
+    showExceptions true
+    showSkipped true
+    showSummary true
+    showPassed true
+    showSkipped true
+    showFailed true
+    showFailedStandardStreams true
+    slowThreshold 1000
+}
